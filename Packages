@@ -4,10 +4,10 @@ Architecture: all
 Maintainer: John Doe <johndoe@example.com>
 Depends: python3, python3-platformdirs, systemd
 Filename: ./tether-autolaunchd_0.1.0_all.deb
-Size: 42022
-MD5sum: 0372f715a3e270e75db2262e9d057c10
-SHA1: 2b09554c81a1c7f46baa110f354f45dae0285e00
-SHA256: c182e28c5ea3f595398ee31e0477884a5534d80cd26ded58445567b1611e299a
+Size: 42028
+MD5sum: 21bcd5824d1fbaedf8f6964c8f6e34e5
+SHA1: 33ffffbf88709c5fa9e10ebf6f1c7c68d5e65efa
+SHA256: c4fc0d6298e646904fc7069380614055814298e8281d32b8d8ce937e90b102fc
 Section: utils
 Priority: optional
 Description: Local Tether autolaunch and auto-attach daemon scaffold
