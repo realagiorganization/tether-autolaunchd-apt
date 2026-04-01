@@ -14,3 +14,19 @@ Description: Local Tether autolaunch and auto-attach daemon scaffold
  Narrow CLI and user-service scaffold for automatically starting local Tether
  and auto-attaching newly discovered external sessions on Kali Linux hosts.
 
+Package: tether-autolaunchd
+Version: 0.1.1
+Architecture: all
+Maintainer: John Doe <johndoe@example.com>
+Depends: python3, python3-platformdirs, systemd
+Filename: ./tether-autolaunchd_0.1.1_all.deb
+Size: 42092
+MD5sum: e26d97ebf5aa5c0e01ff0f9228103e40
+SHA1: 75ab14fcafe4480c6a80755432e3d58c19fc1cd5
+SHA256: 58ffc06fbdb1b53ea8b69dacbabef796a438d4cec7a8c737029567b16c053d48
+Section: utils
+Priority: optional
+Description: Local Tether autolaunch and auto-attach daemon scaffold
+ Narrow CLI and user-service scaffold for automatically starting local Tether
+ and auto-attaching newly discovered external sessions on Kali Linux hosts.
+
