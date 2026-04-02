@@ -12,7 +12,3 @@ echo "deb [signed-by=${KEYRING}] ${REPO_URL} ./" \
 sudo apt-get update
 sudo apt-get install tether-autolaunchd
 ```
-
-This repository is a signed flat APT archive. `Packages`, `Packages.gz`,
-`Release`, `InRelease`, `Release.gpg`, and the exported archive keyring are
-published together from the `tether-autolaunchd` release workflow.

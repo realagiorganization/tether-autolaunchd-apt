@@ -47,11 +47,27 @@ Description: Local Tether autolaunch and auto-attach daemon scaffold
  and auto-attaching newly discovered external sessions on Kali Linux hosts.
 
 Package: tether-autolaunchd
+Version: 0.1.3rc2
+Architecture: all
+Maintainer: John Doe <johndoe@example.com>
+Depends: python3, python3-platformdirs, systemd
+Filename: ./tether-autolaunchd_0.1.3rc2_all.deb
+Size: 53188
+MD5sum: 03532b3f0febe3e4f26949ae7a96caea
+SHA1: 03e820501b0856814a82ad5cb2585548fd9ee8c2
+SHA256: ed092dd00e61a6982a62d1acf64d38c5d878856ce5ea995416dcad627b334111
+Section: utils
+Priority: optional
+Description: Local Tether autolaunch and auto-attach daemon scaffold
+ Narrow CLI and user-service scaffold for automatically starting local Tether
+ and auto-attaching newly discovered external sessions on Kali Linux hosts.
+
+Package: tether-autolaunchd
 Version: 0.1.3~rc2
 Architecture: all
 Maintainer: Lars de Ridder <lars@xithing.io>
 Depends: python3, python3-platformdirs, systemd
-Filename: ./tether-autolaunchd_0.1.3~rc2_all.deb
+Filename: ./tether-autolaunchd_0.1.3-tilde-rc2_all.deb
 Size: 17968
 MD5sum: 96958ea41b7481336327290393dd4c51
 SHA1: 14fd9c09a1c61c5131b90fbc83692fd1fd72fce2
@@ -68,7 +84,7 @@ Version: 0.1.4~rc1
 Architecture: all
 Maintainer: Lars de Ridder <lars@xithing.io>
 Depends: python3, python3-platformdirs, systemd
-Filename: ./tether-autolaunchd_0.1.4~rc1_all.deb
+Filename: ./tether-autolaunchd_0.1.4-tilde-rc1_all.deb
 Size: 17952
 MD5sum: b954294ce8060223cc7885920b934ffb
 SHA1: f6c121a6d9bdf4040165a436254f2dfd18769fb9
