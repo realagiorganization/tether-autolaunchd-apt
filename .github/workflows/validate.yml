@@ -1,0 +1,59 @@
+name: Validate Repository
+
+"on":
+  push:
+    branches:
+      - "**"
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install verification prerequisites
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ca-certificates gnupg
+
+      - name: Check required archive files
+        run: |
+          test -s Packages
+          test -s Packages.gz
+          test -s Release
+          test -s InRelease
+          test -s Release.gpg
+          test -s tether-autolaunchd-archive-keyring.gpg
+
+      - name: Reject malformed prerelease versions
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import re
+
+          bad = []
+          prerelease = re.compile(r"(?:a|b|rc)\d+$")
+          for raw in Path("Packages").read_text(encoding="utf-8").splitlines():
+              if not raw.startswith("Version: "):
+                  continue
+              version = raw.split(": ", 1)[1].strip()
+              if prerelease.search(version) and "~" not in version:
+                  bad.append(version)
+          if bad:
+              raise SystemExit(f"malformed prerelease versions: {', '.join(bad)}")
+          PY
+
+      - name: Verify archive signatures
+        run: |
+          gpgv --keyring ./tether-autolaunchd-archive-keyring.gpg InRelease
+          gpgv --keyring ./tether-autolaunchd-archive-keyring.gpg Release.gpg Release
+
+      - name: Smoke test apt metadata
+        run: |
+          sudo install -D -m 0644 tether-autolaunchd-archive-keyring.gpg /usr/share/keyrings/tether-autolaunchd-archive-keyring.gpg
+          echo "deb [signed-by=/usr/share/keyrings/tether-autolaunchd-archive-keyring.gpg] file://${GITHUB_WORKSPACE} ./" \
+            | sudo tee /etc/apt/sources.list.d/tether-autolaunchd-local.list >/dev/null
+          sudo apt-get update
+          apt-cache policy tether-autolaunchd

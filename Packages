@@ -47,33 +47,35 @@ Description: Local Tether autolaunch and auto-attach daemon scaffold
  and auto-attaching newly discovered external sessions on Kali Linux hosts.
 
 Package: tether-autolaunchd
-Version: 0.1.3rc1
+Version: 0.1.3~rc2
 Architecture: all
-Maintainer: John Doe <johndoe@example.com>
+Maintainer: Lars de Ridder <lars@xithing.io>
 Depends: python3, python3-platformdirs, systemd
-Filename: ./tether-autolaunchd_0.1.3rc1_all.deb
-Size: 53074
-MD5sum: b7ae3401e2407f4fab93fa811fd9a93e
-SHA1: 661bd6296a64eae19ac7b229b5ebc099f44b5b06
-SHA256: 6af67e330b174d34a0f74aeda77d73496288c1fc08265357e65f662b5878248a
+Filename: ./tether-autolaunchd_0.1.3~rc2_all.deb
+Size: 17968
+MD5sum: 96958ea41b7481336327290393dd4c51
+SHA1: 14fd9c09a1c61c5131b90fbc83692fd1fd72fce2
+SHA256: 772d2f0aeafc2eee874628da94a6d60371523f3c8ea9ab28fe518589d14965ef
 Section: utils
 Priority: optional
+Homepage: https://github.com/realagiorganization/tether-autolaunchd
 Description: Local Tether autolaunch and auto-attach daemon scaffold
  Narrow CLI and user-service scaffold for automatically starting local Tether
  and auto-attaching newly discovered external sessions on Kali Linux hosts.
 
 Package: tether-autolaunchd
-Version: 0.1.3rc2
+Version: 0.1.4~rc1
 Architecture: all
-Maintainer: John Doe <johndoe@example.com>
+Maintainer: Lars de Ridder <lars@xithing.io>
 Depends: python3, python3-platformdirs, systemd
-Filename: ./tether-autolaunchd_0.1.3rc2_all.deb
-Size: 53188
-MD5sum: 03532b3f0febe3e4f26949ae7a96caea
-SHA1: 03e820501b0856814a82ad5cb2585548fd9ee8c2
-SHA256: ed092dd00e61a6982a62d1acf64d38c5d878856ce5ea995416dcad627b334111
+Filename: ./tether-autolaunchd_0.1.4~rc1_all.deb
+Size: 17952
+MD5sum: b954294ce8060223cc7885920b934ffb
+SHA1: f6c121a6d9bdf4040165a436254f2dfd18769fb9
+SHA256: 83ea5635dfe50b6219c642bb6b3f66e6085b25cea4900b176d459d1e6ed8eaab
 Section: utils
 Priority: optional
+Homepage: https://github.com/realagiorganization/tether-autolaunchd
 Description: Local Tether autolaunch and auto-attach daemon scaffold
  Narrow CLI and user-service scaffold for automatically starting local Tether
  and auto-attaching newly discovered external sessions on Kali Linux hosts.
