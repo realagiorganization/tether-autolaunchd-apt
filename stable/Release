@@ -1,0 +1,20 @@
+Architectures: all
+Codename: stable
+Components: main
+Date: Thu, 02 Apr 2026 18:50:21 +0000
+Description: Signed flat apt repository for tether-autolaunchd Debian and Kali packages.
+Label: tether-autolaunchd
+Origin: realagiorganization
+Suite: stable
+MD5Sum:
+ 246ebdd03d9433607ba285a59ed93a18              628 Packages
+ 9bfdd42921311ebb465af5a21d91cc32              448 Packages.gz
+SHA1:
+ 44cac2291c9eb6911e34bb008b091c65c509e0cb              628 Packages
+ 0c04364e48a9088d099c8b0038beca16a4dcbbdf              448 Packages.gz
+SHA256:
+ c1d76bb5d25b10e21593e4d0d5a292f209fd365f1d35a39d4aff6e1550d5a7cc              628 Packages
+ 63042517c0fd391f0bc991d77036d518b7c90fa463d8ac8deaf53af0c474380a              448 Packages.gz
+SHA512:
+ a96a48b03c1912827ee6c55c377700b9e5f18f22328e34d2bf0e8b65ab09b66c03b03b0e97e20e26aac59a41cc2507d05fc4e72321cdbcd797e9f297835a22b9              628 Packages
+ a66091025ba45e5c225fece631bde1756150612fb911493bf2f6fb3d407515fd4a896dc52c2d972a4efced18839f3d2a88b9cda0d3fd47408d38dc2b88c4f85c              448 Packages.gz
