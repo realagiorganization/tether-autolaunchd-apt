@@ -20,40 +20,72 @@ jobs:
 
       - name: Check required archive files
         run: |
-          test -s Packages
-          test -s Packages.gz
-          test -s Release
-          test -s InRelease
-          test -s Release.gpg
           test -s tether-autolaunchd-archive-keyring.gpg
+          for CHANNEL_DIR in stable rc; do
+            test -d "$CHANNEL_DIR"
+            test -s "$CHANNEL_DIR/Packages"
+            test -s "$CHANNEL_DIR/Packages.gz"
+            test -s "$CHANNEL_DIR/Release"
+            test -s "$CHANNEL_DIR/InRelease"
+            test -s "$CHANNEL_DIR/Release.gpg"
+          done
 
-      - name: Reject malformed prerelease versions
+      - name: Validate channel version policy
         run: |
           python3 - <<'PY'
           from pathlib import Path
           import re
 
-          bad = []
           prerelease = re.compile(r"(?:a|b|rc)\d+$")
-          for raw in Path("Packages").read_text(encoding="utf-8").splitlines():
-              if not raw.startswith("Version: "):
-                  continue
-              version = raw.split(": ", 1)[1].strip()
-              if prerelease.search(version) and "~" not in version:
-                  bad.append(version)
-          if bad:
-              raise SystemExit(f"malformed prerelease versions: {', '.join(bad)}")
+          errors = []
+          for channel_name, expect_prerelease in (("stable", False), ("rc", True)):
+              packages_path = Path(channel_name) / "Packages"
+              versions = []
+              for raw in packages_path.read_text(encoding="utf-8").splitlines():
+                  if not raw.startswith("Version: "):
+                      continue
+                  version = raw.split(": ", 1)[1].strip()
+                  versions.append(version)
+                  is_prerelease = prerelease.search(version.replace("~", "")) is not None
+                  if is_prerelease and "~" not in version:
+                      errors.append(f"{channel_name}: malformed prerelease version {version}")
+                  if expect_prerelease and not is_prerelease:
+                      errors.append(
+                          f"{channel_name}: stable version present in rc channel: {version}"
+                      )
+                  if not expect_prerelease and is_prerelease:
+                      errors.append(
+                          f"{channel_name}: prerelease version present in stable channel: {version}"
+                      )
+              if not versions:
+                  errors.append(f"{channel_name}: Packages is empty")
+          if errors:
+              raise SystemExit("\n".join(errors))
           PY
 
       - name: Verify archive signatures
         run: |
-          gpgv --keyring ./tether-autolaunchd-archive-keyring.gpg InRelease
-          gpgv --keyring ./tether-autolaunchd-archive-keyring.gpg Release.gpg Release
+          for CHANNEL_DIR in stable rc; do
+            gpgv --keyring ./tether-autolaunchd-archive-keyring.gpg "$CHANNEL_DIR/InRelease"
+            gpgv \
+              --keyring ./tether-autolaunchd-archive-keyring.gpg \
+              "$CHANNEL_DIR/Release.gpg" \
+              "$CHANNEL_DIR/Release"
+          done
 
       - name: Smoke test apt metadata
         run: |
-          sudo install -D -m 0644 tether-autolaunchd-archive-keyring.gpg /usr/share/keyrings/tether-autolaunchd-archive-keyring.gpg
-          echo "deb [signed-by=/usr/share/keyrings/tether-autolaunchd-archive-keyring.gpg] file://${GITHUB_WORKSPACE} ./" \
-            | sudo tee /etc/apt/sources.list.d/tether-autolaunchd-local.list >/dev/null
-          sudo apt-get update
-          apt-cache policy tether-autolaunchd
+          sudo install -D -m 0644 \
+            tether-autolaunchd-archive-keyring.gpg \
+            /usr/share/keyrings/tether-autolaunchd-archive-keyring.gpg
+          for CHANNEL in stable rc; do
+            KEYRING_PATH="/usr/share/keyrings/tether-autolaunchd-archive-keyring.gpg"
+            REPO_PATH="file://${GITHUB_WORKSPACE}/${CHANNEL}"
+            LIST_PATH="/etc/apt/sources.list.d/tether-autolaunchd-local.list"
+            echo \
+              "deb [signed-by=${KEYRING_PATH}] ${REPO_PATH} ./" \
+              | sudo tee "$LIST_PATH" >/dev/null
+            sudo apt-get update
+            apt-cache policy tether-autolaunchd
+            sudo rm -f "$LIST_PATH"
+          done
