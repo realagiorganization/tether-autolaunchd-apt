@@ -4,36 +4,40 @@ Hash: SHA512
 Architectures: all
 Codename: rc
 Components: main
-Date: Thu, 02 Apr 2026 18:54:28 +0000
+Date: Thu, 02 Apr 2026 19:01:20 +0000
 Description: Signed flat apt repository for tether-autolaunchd Debian and Kali packages.
 Label: tether-autolaunchd
 Origin: realagiorganization
 Suite: rc
 MD5Sum:
  754b87ce194ab2f7b9c34abd3ebf0271              634 Packages
- 3b20007d4177c47c7c5da2760e7686b2              450 Packages.gz
+ a4f820caa197916e68e393de71f877cd              450 Packages.gz
+ f5d8acd6e090ec6f003019364fff650a             1034 Release
 SHA1:
  ad2ad5e08217eafe73201a59718a11584b99880c              634 Packages
- 8aa542844fba099d58108278c361d90cd721e6d2              450 Packages.gz
+ 985589d052de7b96dabc2691ec493784eed65467              450 Packages.gz
+ bbf315035daca408101e8a20f792c5a51972b17c             1034 Release
 SHA256:
  74213c1cb9d2d9ab141dc156e389ed7495e90fff948740ab29bed9c4bf8848ae              634 Packages
- ab45a7e6fcee07b9203f5c2c49dad448b8ba1587dda27a7079535374fcdcaf7d              450 Packages.gz
+ bb6d8c13c5f1c890e1fac4588dddeef69dcad1d44c296ae401266caa51a8cf16              450 Packages.gz
+ 1ce50863aaff8d716bf30655fb7819e94b9a3b8c2bbf535c0717e7ba4fdfd808             1034 Release
 SHA512:
  cd59a2136267fdff5801c4eb27dfb365f5a92c2c884f2f5b858042378d3a312ce0b6025f814495a35536b36766d1d9d8d5289a54c1661ef5f7eeeba97771dec6              634 Packages
- 52dbe1a5bb859f9fd3a73ec163af8b27c07c68b2d9234808bb08639c8a4dd93512a5a12cf5f8061b881b18b50a3e033dbae75b0818c64aad6ac2b448c53657c5              450 Packages.gz
+ da5944bfff2bf422f5688b4680baa4dc9f4a4d04cfc0a7ed523664810a568b1b41ba57d6e11c1197e83390cba387194e8270094904610ab79c8f950b392d144d              450 Packages.gz
+ 39836e7d3dba1c1e9f280078f2c2ab4c23192c20eae65ba1972ad0f3f6768cb7400c0a3ba468d8daf343a6ec3773562a980e36901e7f26178ea8ca0a558245e8             1034 Release
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCgAdFiEEFtDsZ+xR9IJWN2Slqj/8c8ijHIEFAmnOu2QACgkQqj/8c8ij
-HIGEFw/+KU4rx3nHtiQKqlYbhnG2hnGvn4Z5DPSOB3DgiSINK88el2R+WksgrCi5
-Zi1mcm1S6jIjcZGoW9J2sSdniIc4b6G8rNDEQU+Cdpr2Hb0ofFCZ3b45Ka5Kna6a
-8LuWtRKhx81DLbJvktYAYhuJcV8d2kl65w/9im1JPURlO3c9rdYqtW8Dtvpeq96G
-csVwL5YZnydVkpba2tDlf+5ejq44y3Iqzn4ujXArEvHJ4IBKcicrfLY4q4D9/Fww
-H6wt+Ep5pnHHtBjnkmUJlbYMbajv2CPPV2c++yG5Y2enCiWEehuR+gdU7agKRDyH
-eSnjF2jlaWiRxUoaEgZ14GoISSO0y6vK5OjmOwK30AwyGrz7pKF3bh46hiXaxyaz
-QDkXsCwv56FRiu/EYV5NUe/MtEZiwQDGSyW9wsA/vh1aO58nBp4LbKmBqNsPdh/n
-8yTXO3WOqqzwwh2zXUKxmbzxu9Tm+jZGjYtxbxAodWUqOW3O2k0qIvVOFsQvpXMY
-SdIxXn54dCPAicffMCwzjgHU2DI1EcEsEMWV9Xd0eORBXSNZVcJ+oKvQNnICzoS1
-WdmLi8t0/KwbaMy7MlgLYDc9MPo7SuLf7XNp7R/QB0HX6U5lKlWWv5DjnzDrzeD8
-Wz3y3kyqXHSnP3xfUDE6DOuCmS8hfzNslaS2fwooA4/eIzK4r6Y=
-=j+63
+iQIzBAEBCgAdFiEEFtDsZ+xR9IJWN2Slqj/8c8ijHIEFAmnOvQAACgkQqj/8c8ij
+HIHAfA/9GmTE5bF017fJxo5oUBH4jUqnuOj2JpuADwIQbu1YR/eGLQx8lt8rbVTu
+kdBPBnvUhdSQrxW1XqIUFrjx4ONoI586XmIFl5CP6bP8Q99tAM8GxpIe7stVtuN5
+eDO3w9oYEEvjzyoVjRF2R0/J0JqLWtWbAYT5aeDVCrBMItcSEVPwJ44B86rcDlcW
+nm4QWLaa7ylav5zuGPTBoRg9G8MU/kXvJWRI6xY3z2BklBRCI3ceH97oSgpIMmvH
+rj0slqjZt+YWyq9rhQDqAbfipF3KL9yzjLnCOMjxamWfhax363rTqtcWHTrvC7Cb
+BnjSeOo3Dt+b/ChHds1Fhzx3Iu6xsZVeiAcuD4G1DYLtTT9qYUDgvToD3yJlyWtf
+R9wLT1j5N3TMQyoLUe86AqfbVSPmfnNZwVE33T2nP+NpCupZ4St9nYdSQQKn6dqP
+WX5nEEkqX8ofFgjYesnPLP1nIlFBSAvPow6NZT+3ZGFMNbLU6aaLEQE/JjNgwDgU
+dgflcI84shi9kmregKVPqRDtc56AfhaDoC9vQ8xauQgeayoY43QWw0CZLeVU03j8
+MRkqCqYDZ8qWVpbIM3qMfCOdNCdggLQgIbbTtuu4EuIJykp/U6MlcFwznRSeyvw7
+J5CYDDjVl7UFHIlYuJ45bzor4+FE1Qp5wOKm9ysuZJA7n0yALic=
+=dIcH
 -----END PGP SIGNATURE-----
