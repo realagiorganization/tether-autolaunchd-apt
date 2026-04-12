@@ -4,40 +4,40 @@ Hash: SHA512
 Architectures: all
 Codename: rc
 Components: main
-Date: Thu, 02 Apr 2026 19:06:34 +0000
+Date: Sun, 12 Apr 2026 16:18:10 +0000
 Description: Signed flat apt repository for tether-autolaunchd Debian and Kali packages.
 Label: tether-autolaunchd
 Origin: realagiorganization
 Suite: rc
 MD5Sum:
- 66db9da874c46d01e60aa4531f0bb154              642 Packages
- 8d3cab8162cdc95816a3abbfa9169391              459 Packages.gz
- 73571a26373e53721adb98df3321e23e             1406 Release
+ 929822f58a56e220851eeb8c01c29d5f             1354 Packages
+ 8713e596525e829c1fb25577fa719e72              643 Packages.gz
+ bce6aed0d270f6459f62142b64abcbcc             1406 Release
 SHA1:
- 2cf664d26dfb9e5d8e2b7c0c061d61be125be47b              642 Packages
- ebab80274aca3fd9bc8dad0db39f04fbb49ffde0              459 Packages.gz
- ee03cd6b9fc6087ae1677aeb8f1ad0a46cf49f9f             1406 Release
+ bf408d5d287bf4961e34ceeefbbbf3b3f346882d             1354 Packages
+ 2aeb72ba8f9e14fa57c1d2f0ee2969dd70a6d05a              643 Packages.gz
+ 4280625f232cbc7224503c24b274066a5c56410d             1406 Release
 SHA256:
- fd9d46e0f2d7cb2dd41f77b655c715346e3b360db8f12e3022479f7a0209f19f              642 Packages
- e14dbbdf6d3342cb2dc3e49b6e233e8e57a1a64ceaa95d05918a21cbe33dc7f5              459 Packages.gz
- 88260ac50446223c8ddb3c30f9da5958588fea1fa2a31745146221db9958c8d0             1406 Release
+ 780f6a0c9fc418d58db48b8b5d89a026dac863c388b4a12311268e9790d56c8a             1354 Packages
+ 96b31625eabee7d1f09509932b9ffabb8df7c93918890188f04623c81c83ceb2              643 Packages.gz
+ fdd037db4800fd3984e95c9b304d444d28998615137053c483db8347cdd3be8b             1406 Release
 SHA512:
- 2dd1da4046a1ca2fb438fc44d98ef119f1101f7bfaa350919e49cf5ab4c0acad824f0e7b2ed206052bcc61c4d647833279a392d478b210094ae9f511765c3fd5              642 Packages
- 1a9544fb77dc1fd6eca82ead570e3b0fe701f305080af991a072ee3c5b2b2df18bb08ec9815c40dbfa56e4edb97918aa8df9eca3dac4ba9ff2433dd0c94d8d00              459 Packages.gz
- d7173697b29da3c1efa3b847cfcdf338efb7fa8832333e62cf2076eba4f39e2c473c36986e56aaf9e633d55ad84666f05f79fd610b3a77022ab42dbbf9c8c420             1406 Release
+ 422f1cad91c6ea8601ab7352c29ba72d09809648ce5ae08aef301b8547e380ae792c15a453dcc5712ade22c6291c3d9cd44ec443212a93600a08e63a5e547c45             1354 Packages
+ 499bdfb77c7eb7f270c1a9dc99b3a690c9e71aba8936f5a880a94fbbd0b1f5a3d668535c519d09edc400ce0166764426896df5246a26f6558f9bab8f8f9a7d34              643 Packages.gz
+ d785828c6ed6552d503eac7aeb6d25aa134d532eb3b29a00c231962d022481a468fe79e042deff1cdfe9f948e05c53d1731adfb52c8a04ad1b0e6a0a53a91776             1406 Release
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCgAdFiEEFtDsZ+xR9IJWN2Slqj/8c8ijHIEFAmnOvjoACgkQqj/8c8ij
-HIF+uhAAnMsdnM0wcGNc7TD23e4gpJn9M6xAuFM+R6p5KRSNSvDiVHMpFcaA3fuf
-N2xUk8mlXlfKMBT80QnQz2FEgRX1NiHSqJelGma2DiM0eWox+Jfi1QwGjnzByuAR
-KsIPwDSvWfJ7ATrjuTppXRHf+TTwBqXKnD/pC+n6/xRm7W4AmyCdazSYVZ3Btkfc
-Qh+5x7sNzWOZMXwwr64eU3aCjDSVrGvTLNznrRW/d8b+yP9NBvkMmOsSr1ulHw5r
-YB3MNPnDvSok2UVoXrvuLuQ77ZtGWj1kjrrykDGh4DzR+wXKUFfovl1ML+LxscpR
-bzXpPP6d5yo4VaBDrJr8LvnBXG481GPvUMi69I2tJPMSxMEJrYP6MqTt+wCpiR24
-LnD1OuBoFzZ8Ri1RnUSVlvJecbWZAP1yrVn7BicDdACfNYscON4aEIFoZzBOF/N8
-70/NTVzFoTrDDPKle5gtUXWHKfzGizQmZ0Z0dAB0HSLv6IsjsL/D4u5tkHEVudiK
-lW9e6dXS+yq7u0JdBVtk+SR2nRFDKgXXF2WUbY2+MQZP9D8RTFx3ciBZ9+5TzzhE
-u3yl9yYTwvcicWrgJ3gHOPWvwqIwYiSGXoy7CGszlKeNE7D6S5CSG5w+73YagGn2
-M5oajAcsr83VzvLW27mH0E0vCXFl1LkQVNKwoCYl/PP87qh1cVc=
-=9fRB
+iQIzBAEBCgAdFiEEFtDsZ+xR9IJWN2Slqj/8c8ijHIEFAmnbxcIACgkQqj/8c8ij
+HIFDjw/+PN9UWMDAZmnX/XMSqKOvyq22qZBAJiXHD8l4Ao7pcakN3l47xW0lGfRj
+aLmrVhAaiyIxOjWCFrpiRCIZ3j3TGBOuZqxwPMgBQa4DGx7D5Q7EERJ6CkIAW7lo
+dbwiJBtyAuFNLSBDxehlto4VOvCJYUxfL8KmkEQreM8NMU8nFdta+iSq9k7V8RZx
+q8mNfj4RigRBqMwopWuFYoGwJRvGUJcQ++C1gckrnjagexwdn2gCxRA9f41taYSs
+nDx9pYM7ZsgqPbqjjCy8eF6CNa9esPK6G0vK/8jWfCnxZjBF97SOziM5ltIR1oqj
+TPq70Yt21oVLXIOSyXFPjCpPzr19vXGFjTOggAkWu9whSLYBRvHCnvMTjnDkfz63
+/mADMrNG8OVoeGF1iFQxbyTNvU7gwOG62vtnKLqAetjURNw396TNmft06FtLS30T
+cXbSWA/pMSHkyKs8XEW9qYyYN6b9ueMDCNWvhXljpQzfJ24LMHH0+Pqnik0qsHaJ
+bYJ3CtK/fy1O3kav3BE6TPgpT9JDqQtlFn81M371IhqxoXfC6V95g8IEfkyMk9RQ
+Yg4jK/pnfNTxymawVyJk6oU58X64CYcOUEh6YKznzVsomeD0UE1NGJUbFWyboxCy
+0P+LThHWsp4YLU0+6MmFXW2qo5KDBdPPGtRs2GcyFjRrebeawoA=
+=BDZk
 -----END PGP SIGNATURE-----
